@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Run w/ Docker
+cd /{REPO}
+sudo docker build -t tictactoe .
+sudo docker run -it --restart=unless-stopped --privileged=true -p 3000:3000 --name tictactoe tictactoe
+
 ## Available Scripts
 
 In the project directory, you can run:
