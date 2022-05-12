@@ -29,5 +29,6 @@ RUN n latest
 RUN npm install -g create-react-app@3.0.1
 RUN create-react-app tictactoe
 RUN rsync -a repos/tictactoe/ tictactoe/
+RUN cd tictactoe && echo "PORT=3000" > .env 
 ENTRYPOINT ["/home/StartupScript.sh"]
 CMD [""]
